@@ -2,9 +2,6 @@ var title = document.createElement('title')
 title.innerHTML = "Fetch-restcountries"
 document.head.append(title)
 
-var div1 = document.createElement('div')
-div1.setAttribute('class','container')
-document.body.appendChild(div1)
 
 var rcountries = fetch('https://restcountries.eu/rest/v2/all')
 
@@ -64,7 +61,7 @@ rcountries
                 
             }
             
-			div1.appendChild(row)
+			document.body.append(row)
         }
     
     })
